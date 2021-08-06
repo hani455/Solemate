@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confirmation</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="theme">
+			<img id="theme-icon" src="img/moon-icon-white.png" onclick="change_theme()">
+		</div>
+		<div id="form-box" class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login_view()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register_view()">Register</button>
+			</div>
+			<div class="social-icon">
+				<img src="img/225-2252648_new-balance-logo-icon-new-balance-shoes-svg.png">
+			</div>
+			<form id="login" class="input-group" action="connect.php" method="post">
+				<input name="login-email" id="login-email" type="email" class="input-field" placeholder="Email ID" required>
+				<input name="login-password" id="login-password" type="Password" class="input-field" placeholder="Enter Password" required>
+				<input id="remember-email" type="checkbox" class="check-box"><span>Remember Email</span>
+				<button type="submit" class="submit-btn" onclick="login()" name="input-group" value="login">Log in</button>
+			</form>
+			<form id="register" class="input-group" action="connect.php" method="post">
+				<input name="register-name" id="register-name" type="text" class="input-field" placeholder="Name" required>
+				<input name="register-email" id="register-email" type="email" class="input-field" placeholder="Email ID" required>
+				<input name="register-password" id="register-password" type="Password" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box" required><span>I agree to the <a href="https://www.umt.edu.pk/">terms & condisions</a></span>
+				<button type="submit" class="submit-btn" onclick="register()" name="input-group" value="register">Register</button>  
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
